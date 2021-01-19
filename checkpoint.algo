@@ -1,0 +1,20 @@
+ALGORITHM phrase
+VAR
+nb_char: integer := 0
+nb_words: integer :=0
+nb_vowels: integer :=0
+c: CHAR :=""
+WHILE (c<>".") DO
+read(c)
+nb_char:=nb_char+1
+IF (c=" ") THEN
+nb_words:=nb_words+1
+END_IF
+IF (c="a" or c="e" or c="i" or c="u" or c="o" or c="y") THEN
+nb_vowels:=nb_vowels+1
+END_IF
+END_WHILE
+write (nb_char)
+write ( nb_words)
+write (nb_vowels)
+END
